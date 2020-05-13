@@ -347,6 +347,7 @@ EventLoop:
 				if screen == nil {
 					continue
 				}
+				screen.Sync()
 				newWidth, newHeight := screen.Size()
 				if newWidth == width && newHeight == height {
 					continue
